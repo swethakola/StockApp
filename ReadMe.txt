@@ -10,4 +10,7 @@ Run applciation from service
 	stockDetailsService -> mvn spring-boot:run
 
 
-Added file to upload in StockApp directory to check the format and columns - Filename -dow_jones_index.data
+Added file to upload in StockApp directory to check the format and columns - Filename -dow_jones_index.data.(Use this file in upload tab to upload data file)
+
+Open browser and give below url to access application:
+http://localhost:8080
