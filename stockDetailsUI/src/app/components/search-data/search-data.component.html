@@ -1,0 +1,38 @@
+ 
+
+ 
+
+
+<div class="tab">
+  <div class="card-header">Search Stock Details</div>
+  <input type="text"  [(ngModel)]="searchText"/>
+  <button class="btn btn-success"   (click)="searchData()">
+    Search
+  </button>
+  </div>  
+   
+<div class="alert alert-light" role="alert">{{ message }}</div>
+
+  <table mdbTable border=true>
+    <thead>
+      <tr>
+        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let el of stockList">
+        <th scope="row">{{el.quarter}}</th>
+        <td>{{el.stock}}</td>
+        <td>{{el.date}}</td>
+        <td>{{el.open}}</td>
+        <td>{{el.high}}</td>
+        <td>{{el.low}}</td>
+        <td>{{el.close}}</td>
+        <td>{{el.volume}}</td>
+        <td>{{el.percentChangePrice}}</td>
+        <td>{{el.daysToNextDividend}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+

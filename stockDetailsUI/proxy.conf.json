@@ -1,0 +1,17 @@
+{
+    "/upload": {
+        "target": "http://localhost:8080",
+        "secure": false
+        
+    },
+    "/getStock": {
+        "target": "http://localhost:8080",
+        "secure": false
+        
+    },
+    "/addStock": {
+        "target": "http://localhost:8080",
+        "secure": false
+        
+    }
+}

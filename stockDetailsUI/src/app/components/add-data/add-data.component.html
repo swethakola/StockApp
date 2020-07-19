@@ -1,0 +1,93 @@
+
+<div class="tab">
+  <div class="card-header">Add Stock Details</div>
+  
+  </div>
+  <div class="container">
+   <form class="form-horizontal">
+      <div class="row">
+          
+         <div class="col-xs-6">
+<div class="form-group">
+  <label for="quarter" class="searchCriteria">Quarter: </label>
+  <input id="quarter" name="quarter" type="number" [(ngModel)]="stock.quarter">
+</div>
+
+<div class="form-group">
+  <label for="stockname" class="searchCriteria">Stock Name: </label>
+  <input id="stockname" name="stockname" type="text" [(ngModel)]="stock.stock">
+</div>
+<div class="form-group">
+  <label for="date" class="searchCriteria">Date: </label>
+  <input id="date" name="date" type="date" [(ngModel)]="stock.date">
+</div>
+
+<div class="form-group">
+  <label for="open" class="searchCriteria">Open: </label>
+  <input id="open" name="open" type="text" [(ngModel)]="stock.open">
+</div>
+
+<div class="form-group">
+  <label for="high" class="searchCriteria">High: </label>
+  <input id="high" name="high" type="text" [(ngModel)]="stock.high">
+</div>
+<div class="form-group">
+  <label for="low" class="searchCriteria">Low: </label>
+  <input id="low" name="low" type="text" [(ngModel)]="stock.low">
+</div>
+<div class="form-group">
+  <label for="close" class="searchCriteria">Close: </label>
+  <input id="close" name="close" type="text" [(ngModel)]="stock.close">
+</div>
+<div class="form-group">
+  <label for="volume" class="searchCriteria">Volume: </label>
+  <input id="volume" name="volume" type="text" [(ngModel)]="stock.volume">
+</div>
+</div>
+<div class="col-xs-6">
+<div class="form-group">
+  <label for="percentChangePrice" class="searchCriteria">PercentChangePrice: </label>
+  <input id="percentChangePrice" name="percentChangePrice" type="text" [(ngModel)]="stock.percentChangePrice">
+</div>
+<div class="form-group">
+  <label for="daysToNextDividend" class="searchCriteria">DaysToNextDividend: </label>
+  <input id="daysToNextDividend" name="daysToNextDividend" type="text" [(ngModel)]="stock.daysToNextDividend">
+</div> 
+<div class="form-group">
+  <label for="percentChangeVolumeOverLastWk" class="searchCriteria">percentChangeVolumeOverLastWk: </label>
+  <input id="percentChangeVolumeOverLastWk" name="percentChangeVolumeOverLastWk" type="text" [(ngModel)]="stock.percentChangeVolumeOverLastWk">
+</div> 
+
+<div class="form-group">
+  <label for="previousWeeksVolume" class="searchCriteria">previousWeeksVolume: </label>
+  <input id="previousWeeksVolume" name="previousWeeksVolume" type="text" [(ngModel)]="stock.previousWeeksVolume">
+</div> 
+
+<div class="form-group">
+  <label for="nextWeeksOpen" class="searchCriteria">nextWeeksOpen: </label>
+  <input id="nextWeeksOpen" name="nextWeeksOpen" type="text" [(ngModel)]="stock.nextWeeksOpen">
+</div> 
+
+<div class="form-group">
+  <label for="nextWeeksClose" class="searchCriteria">nextWeeksClose: </label>
+  <input id="nextWeeksClose" name="nextWeeksClose" type="text" [(ngModel)]="stock.nextWeeksClose">
+</div> 
+
+<div class="form-group">
+  <label for="percentChangeNextWeeksPrice" class="searchCriteria">percentChangeNextWeeksPrice: </label>
+  <input id="percentChangeNextWeeksPrice" name="percentChangeNextWeeksPrice" type="text" [(ngModel)]="stock.percentChangeNextWeeksPrice">
+</div> 
+
+<div class="form-group">
+  <label for="percentReturnNextDividend" class="searchCriteria">percentReturnNextDividend: </label>
+  <input id="percentReturnNextDividend" name="percentReturnNextDividend" type="text" [(ngModel)]="stock.percentReturnNextDividend">
+</div> 
+<div class="form-group">
+  </div>
+
+<button class="btn btn-success" (click)="addData()">
+  Add Data
+</button>
+</div>
+<div class="alert alert-light" role="alert">{{ message }}</div>
+
